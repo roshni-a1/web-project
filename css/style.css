@@ -1,0 +1,184 @@
+/* ===== General Styles ===== */
+body {
+  margin: 0;
+  background-color: gray;
+  font-family: cursive;
+  color: white;
+  box-sizing: border-box;
+}
+
+header {
+  color: white;
+}
+
+/* ===== Container Styling ===== */
+.container {
+  background-color: #000000;
+  width: 90%;
+  padding-top: 40px;
+  overflow: hidden;
+}
+
+/* ===== Logo Styling ===== */
+.logo {
+  font-size: 20px;
+  text-align: center;
+}
+
+/* ===== Navigation Sidebar ===== */
+.nav,
+.nav ul,
+.nav ul li {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.nav ul li a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  display: block;
+  padding-top: 30px;
+  transition: 0.3s;
+  padding-left: 20px;
+  padding-bottom: 10px;
+}
+
+.nav ul li a:hover {
+  color: crimson;
+}
+
+/* ===== Image Section ===== */
+.custom-img-box {
+  width: 100%;
+  padding: 0 10px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.custom-img-box img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* ===== Column Padding Reset ===== */
+.col-lg-3, .col-lg-4, .col-lg-6 {
+  padding: 0;
+  margin: 0;
+}
+
+/* ===== Box Styling ===== */
+.box {
+  background-color: lightblue;
+  margin-top: 0;
+  padding: 0;
+  height: auto;
+}
+
+.box.d-flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ===== Video Element Styling ===== */
+.video-element {
+  width: 100%;
+  height: auto;
+  max-width: 550px;
+  max-height: 450px;
+  display: block;
+}
+
+/* ===== About Section ===== */
+.container2 {
+  width: 100%;
+  height: 600px;
+  background-color: white;
+  color: navy;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+/* ===== Blog Section ===== */
+.blog ul, .blog ul li {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+    text-align: center;
+  font-size: 20px;
+}
+
+.blog ul li a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+.box2 {
+  float: left;
+}
+
+/* ===== 3D Footer Styling ===== */
+.copyright-footer {
+  height: 100px;
+  background: #1e1e1e;
+  max-width: 700px;
+  margin: 40px auto;
+  padding: 25px 15px;
+  border-radius: 15px;
+  box-shadow:
+    8px 8px 15px rgba(0, 0, 0, 0.7),
+    -8px -8px 15px rgba(60, 60, 60, 0.9);
+  color: #eee;
+  text-align: center;
+  transition: box-shadow 0.3s ease;
+  user-select: none;
+}
+
+.copyright-footer:hover {
+  box-shadow:
+    inset 6px 6px 10px rgba(0, 0, 0, 0.7),
+    inset -6px -6px 10px rgba(60, 60, 60, 0.9);
+}
+
+.copyright-footer p {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin: 0;
+}
+
+.copyright-footer strong {
+  color: red;
+  text-shadow: 1px 1px 2px blue;
+}
+
+.copyright-footer i.fas.fa-heart {
+  color: #e74c3c;
+  margin-left: 6px;
+  text-shadow:
+    0 0 8px #e74c3c,
+    0 0 12px #c0392b;
+  animation: pulseHeart 2s infinite;
+}
+
+/* Heart Pulse Animation */
+@keyframes pulseHeart {
+  0%, 100% {
+    text-shadow:
+      0 0 8px #e74c3c,
+      0 0 12px #c0392b;
+    transform: scale(1);
+  }
+  50% {
+    text-shadow:
+      0 0 12px #ff6f61,
+      0 0 18px #ff4534;
+    transform: scale(1.2);
+  }
+}
